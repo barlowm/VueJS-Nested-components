@@ -1,0 +1,103 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	background: silver;
+}
+
+label {
+	font-weight: bold;
+}
+
+ul.input {
+	border-top: thin solid silver;
+}
+ul.input li {
+	border-bottom: thin solid silver;
+}
+ul.input input {
+	width: 80vw;
+}
+
+
+th label {
+	text-align: right;
+}
+
+div.button {
+	margin-top: 1em;
+}
+
+textarea {
+	width: 80vw;
+	height:50vh;
+	border-radius: 5px;
+}
+
+.container {
+
+	width: 90vw;
+	margin: 0 5vw;
+	margin:auto;
+}
+
+.bordered-container {
+	border-radius: 8px;
+	background: white;
+	border: thin solid silver;
+	margin: 1em;
+	padding: 0.5em;
+
+}
+
+.bordered-container h2 {
+	margin:0;
+}
+
+
+.waiting {
+	text-align: center;
+	font-size: wem;
+	font-weight: bold;
+	margin: 2em;
+}
+
+.indent1 {
+	margin-left: 4.5em;
+}
+
+h1 {
+	text-align: center;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+span.heading {
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	padding-left: 15px;
+	text-indent: -15px;
+}
+
+#checkbox {
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: bottom;
+	position: relative;
+	top: -3px;
+}

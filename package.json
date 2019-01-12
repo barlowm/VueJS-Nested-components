@@ -1,0 +1,32 @@
+{
+  "name": "vue_tester",
+  "version": "1.0.0",
+  "description": "Sample VueJS app to pass simple data from a component nested several levels deep",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd src& nodemon index"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/*.*",
+      "src/server/*.*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barlowm/RPCTester.git"
+  },
+  "keywords": [
+    "vue.js"
+  ],
+  "author": "Mike Barlow <barlowm@gmail.com> (http://mwbarlow.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barlowm/RPCTester/issues"
+  },
+  "homepage": "https://github.com/barlowm/RPCTester#readme",
+  "dependencies": {
+    "nodemon": "^1.18.9",
+    "@vue/devtools": "^4.1.5"
+  }
+}

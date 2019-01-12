@@ -1,0 +1,28 @@
+<!doctype html>
+<script src="http://localhost:8098"></script>
+<html class="no-js" lang="">
+<head>
+	<title>VueJS Tester 01</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/custom.css">
+	<script> var __basePath = ''; </script>
+</head>
+
+<body>
+	<h1 class="text-center">Nested Component Data Passing</h1>
+	<p>Sample VueJS app to pass simple data from a component nested several levels deep</p>
+	<p>Start at the lowest level (credential_input.js) with a custom input field component which accepts input from the user and passes it up to it's parent</p>
+	<p>The next level up (credentials.js) has several of the custom input field components that receive data from each sub component and combines them into a single object which is then passed up</p>
+	<p>At the top component level (app.js) we have a single object which receives the single component object from it's child, which has all the credential values collected in the "credentials" component</p>
+	<p>
+
+	<div class="container" id="app">
+	</div>
+
+	<div style="text-align: center;"<em>Note: This app uses the standalone "Electron" <a href="https://github.com/vuejs/vue-devtools">vue-devtools</a> app for debugging</em></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="module" src="./vue.js"></script>
+</body>
+</html>
