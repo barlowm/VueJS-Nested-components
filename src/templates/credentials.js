@@ -12,26 +12,25 @@ export default {
 				un: "",
 				pwd: ""
 			}
-		}
+		};
 	},
 
 	methods: {
-		CInput: function(id, value) {
+		Credentials: function(id, value) {
 			if ("UserName" == id) {
 				this.credential.un = value;
 			}
 			if ("Password" == id) {
 				this.credential.pwd = value;
 			}
-			this.$emit('CInput', this.credential);
-		},
+			this.$emit('Credentials', this.credential);
+		}
 	},
-
 
 	template: `
 		<table>
-			<CredentialInput field="UserName" label="Server Username" help="" @CInput="CInput"></CredentialInput>
-			<CredentialInput field="Password" label="Server Password" help="" @CInput="CInput"></CredentialInput>
+			<CredentialInput field="UserName" label="Server Username" help="" @CInput="Credentials"></CredentialInput>
+			<CredentialInput field="Password" label="Server Password" help="" @CInput="Credentials"></CredentialInput>
 		</table>
-	`,
+	`
 };
